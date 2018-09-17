@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ShopifyChallenge</string>
+
+    <!-- Errors and Actions after errors -->
+    <string name="error_no_items_to_display">No items to display</string>
+    <string name="error_generic_error">There was an error, %1$s</string>
+    <string name="action_try_again">Try Again</string>
+    <string name="action_check_again">Check Again</string>
+
+</resources>
