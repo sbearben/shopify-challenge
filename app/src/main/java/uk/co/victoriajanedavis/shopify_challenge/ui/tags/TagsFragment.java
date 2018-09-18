@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,7 +27,6 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
 import uk.co.victoriajanedavis.shopify_challenge.R;
-import uk.co.victoriajanedavis.shopify_challenge.ui.MarginDividerItemDecoration;
 import uk.co.victoriajanedavis.shopify_challenge.ui.base.BaseFragment;
 
 public class TagsFragment extends BaseFragment implements TagsMvpView, SwipeRefreshLayout.OnRefreshListener {
@@ -133,7 +131,7 @@ public class TagsFragment extends BaseFragment implements TagsMvpView, SwipeRefr
     }
 
     @Override
-    public void onSaveInstanceState (Bundle outState) {
+    public void onSaveInstanceState (@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putStringArrayList(SAVED_TAGS_LIST, new ArrayList<>(mAdapter.getTags()));
     }

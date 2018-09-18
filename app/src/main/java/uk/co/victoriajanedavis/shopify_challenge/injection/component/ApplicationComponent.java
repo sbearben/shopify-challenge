@@ -14,8 +14,6 @@ import uk.co.victoriajanedavis.shopify_challenge.injection.module.ShopifyService
 @Component(modules = {ApplicationModule.class, ShopifyServiceModule.class})
 public interface ApplicationComponent {
 
-    //void inject(SyncService syncService);
-
     @ApplicationContext Context context();
     Application application();
     DataManager dataManager();

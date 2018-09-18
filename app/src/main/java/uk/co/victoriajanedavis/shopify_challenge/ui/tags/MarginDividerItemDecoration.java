@@ -1,4 +1,4 @@
-package uk.co.victoriajanedavis.shopify_challenge.ui;
+package uk.co.victoriajanedavis.shopify_challenge.ui.tags;
 
 import android.content.Context;
 import android.content.res.TypedArray;

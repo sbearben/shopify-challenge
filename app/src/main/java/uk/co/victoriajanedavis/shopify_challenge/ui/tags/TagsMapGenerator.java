@@ -1,17 +1,10 @@
 package uk.co.victoriajanedavis.shopify_challenge.ui.tags;
 
-import android.support.annotation.NonNull;
-
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
-import java.util.SortedMap;
 import java.util.TreeMap;
-import java.util.concurrent.ConcurrentHashMap;
 
 import uk.co.victoriajanedavis.shopify_challenge.data.model.Product;
 
@@ -47,7 +40,7 @@ public class TagsMapGenerator {
 
     }
 
-    private static synchronized void addProductToMapByTag(String tagKey, Product product) {
+    private static void addProductToMapByTag(String tagKey, Product product) {
         if (mapContainsTag(tagKey)) {
             List<Product> productsList = getProductsFromMapByTag(tagKey);
             addProductToListIfNotAlreadyIn(product, productsList);
